@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Mystery+Quest&family=Roboto&display=swap');
+:root {
+    --back-color-dark: #111115;
+    --box-color-dark: #27272f;
+    --purple-dark: #e0c5ff;
+    --dark-gray: #e2e2e2;
+    --green-dark: #6dff8d;
+    --yellow-dark: #ffe815;
+    --white: #fff;
+    --black: #000;
+    --red-dark: #ff203a;
+    --blue-dark: #3fbfff;
+    --dark-blur: #11111582;
+    --shadow-dark: #00000034;
+    --shadow-light: #ffffff5f;
+    --transparent: #44444400;
+    scrollbar-color: var(--purple-dark) var(--back-color-dark) !important;
+    scrollbar-width: thin !important;
+}
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #00000000; 
+    border-radius: 3px;
+  }
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--purple-dark); 
+    border-radius: 10px;
+  }
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+body
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: var(--back-color-dark);
+    scrollbar-color: #000 #00000013;
+    color: var(--dark-gray);
+    scrollbar-width: 0;
+    overflow-x: hidden;
+}
+a
+{
+    text-decoration: none;
+}
+.main_navbar_desktop
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    box-shadow: 0px 0px 30px 5px var(--shadow-dark);
+
+}
+.main_navbar_desktop .logo_area
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 40px;
+    margin: 10px;
+}
+.main_navbar_desktop .logoImage
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+}
+.main_navbar_desktop .logoImage img
+{
+    width: 100%;
+}
+.main_navbar_desktop .search_area
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%; 
+}
+.searchArea
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.search.Bar
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    height: 100%;
+    max-height: 40px;
+    border-radius: 10px;
+    margin: 20px 5px;
+    background: var(--box-color-dark);
+    outline: none;
+}
+.search.Bar input
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    font-size: 17px;
+    color: var(--purple-dark);
+    background: var(--transparent);
+    outline: none;
+    font-family: 'Emilys Candy', cursive;
+}
+.search.Bar button
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25px;
+    height: 100%;
+    border: 0;
+    background: var(--transparent);
+    color: var(--dark-gray);
+    font-size: 22px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.search.Bar button:hover
+{
+    color: var(--red-dark);
+}
+.main_navbar_desktop .icon_area
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 40px;
+}
+.main_navbar_desktop .icon_area .icons
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.main_navbar_desktop .icon_area .icons .icon
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--box-color-dark);
+    margin: 5px;
+    color: var(--shadow-light);
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.main_navbar_desktop .icon_area .icons .icon:hover
+{
+    color: var(--purple-dark);
+}
+.main_navbar_desktop .icon_area .icons .icon.delete
+{
+    color: var(--red-dark);
+}
+/* ////////////////////////////////////////////////// */
+.main_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 91vh;
+}
+.main_section .firstPart
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+}
+.main_section .firstPart .chat_header
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+    background: var(--black);
+}
+.main_section .firstPart .chat_header .title
+{
+    margin: 20px;
+    color: var(--dark-gray);
+    font-size: 30px;
+    font-family: 'Emilys Candy', cursive;
+}
+.private_message_section
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow: scroll;
+    scrollbar-color: var(--purple-dark) var(--back-color-dark) !important;
+    scrollbar-width: thin !important;
+}
+.private_message_section::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+.private_message_section::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #00000000; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+.private_message_section::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+.users-list
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.users-list a
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.private_message
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background: var(--box-color-dark);
+    border-radius: 10px;
+    width: 95%;
+    padding: 0;
+    margin: 5px;
+    cursor: pointer;
+}
+.private_message .details
+{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    margin: 10px;
+    max-height: 50px;
+}
+.private_message .image
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    margin-right: 0;
+}
+.private_message .image img
+{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+.private_message .username
+{
+    margin: 0; 
+    color: var(--red-dark);
+    font-weight: 900;
+    font-size: 17px;
+    font-family: 'Emilys Candy', cursive;
+}
+.private_message p
+{
+    color: var(--dark-gray);
+    margin-top: 5px;
+    font-size: 14px;
+}
+.main_section .secondPart
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+}
+.main_section .thirdPart
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-color: var(--purple-dark) var(--back-color-dark) !important;
+    scrollbar-width: thin !important;
+} 
+.main_section .secondPart .chat_section
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden; 
+    scrollbar-color: var(--purple-dark) var(--back-color-dark) !important;
+    scrollbar-width: thin !important;
+}
+.main_section .secondPart .chat_section::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  .main_section .secondPart .chat_section::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #00000000; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .main_section .secondPart .chat_section::-webkit-scrollbar-thumb {
+    background: var(--purple-dark); 
+    border-radius: 10px;
+  }
+.main_section .secondPart .chat_section .message
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: auto; 
+    margin: 10px 0;
+}
+.main_section .secondPart .chat_section .message.send
+{
+    justify-content: end;
+    align-items: end;
+    margin: 20px 0;
+}
+.main_section .secondPart .chat_section .message .message_container
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: auto;
+    max-width: 60%;
+    height: auto;
+}
+.main_section .secondPart .chat_section .message.send .message_container
+{
+    margin-right: 10px;
+}
+.main_section .secondPart .chat_section .message .message_container .user_name
+{
+    margin-right: 10px;
+    font-weight: 900;
+    font-family: 'Emilys Candy', cursive;
+    color: var(--red-dark);
+    line-height: 25px;
+}
+.main_section .secondPart .chat_section .message.send .message_container .user_name
+{
+    display: none;
+}
+.main_section .secondPart .chat_section .message .message_container .message_text
+{
+    line-height: 25px;
+}
+.main_section .secondPart .chat_section .message .message_container .message_text span
+{
+    color: var(--shadow-light);
+    font-family: 'Emilys Candy', cursive;
+    margin-left: 10px;
+}
+.main_section .secondPart .chat_section .date_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+.main_section .secondPart .chat_section .date
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--red-dark);
+    font-family: 'Emilys Candy', cursive;
+    background: var(--box-color-dark);
+    font-weight: 900;
+}
+.main_section .secondPart .chat_input_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 5%;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--box-color-dark);
+    box-shadow: 0 0 20px 5px var(--shadow-dark);
+}
+.main_section .secondPart .chat_input_section .chat_input_field
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: var(--transparent);
+    resize: none;
+    color: var(--purple-dark);
+    scrollbar-width: thin !important;
+    outline: none;
+}
+.send_btn
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: var(--purple-dark);
+    border: 0;
+    background: var(--transparent);
+    cursor: pointer;
+}
+.thirdPart .image
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 20px;
+    height: auto;
+    margin: 10px 0;
+}
+.thirdPart .image img
+{
+    border-radius: 20px;
+    width: 100%;
+}
+/* /////////////////////////////////////////// */
+.qr_code_section
+{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+}
+.qr_code_section.close
+{
+    z-index: -100;
+    backdrop-filter: blur(0px);    
+}
+.qr_code_section.close .qr_code_container
+{
+    z-index: -100;
+    opacity: 0;
+    transform: scale(0.7);
+}
+.qr_code_section .qr_code_container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    max-height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 0 var(--shadow-dark);
+    background: var(--box-color-dark);
+    transition: 0.5s;
+}
+.qr_code_section .qr_code_container .textarea
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 50%;
+    height: 95%;
+    padding: 10px;
+    font-size: 20px;
+    border-right: 2px solid var(--shadow-dark);
+    transition: 0.5s;
+}
+.qr_code_section .qr_code_container .textarea p
+{
+    font-weight: 600;
+    margin: 10px;
+    color: var(--shadow-light);
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.qr_code_section .qr_code_container .textarea .red
+{
+    font-family: 'Emilys Candy', cursive;
+    color: var(--red-dark);
+}
+.qr_code_section .qr_code_container .textarea .green
+{
+    font-family: 'Emilys Candy', cursive;
+    color: var(--green-dark);
+}
+.qr_code_section .qr_code_container .textarea .purple
+{
+    font-family: 'Emilys Candy', cursive;
+    color: var(--purple-dark);
+}
+.qr_code_section .qr_code_container .image
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 95%;
+    margin: 10px;
+    background: var(--black);
+    border-radius: 20px;
+}
+.qr_code_section .qr_code_container .image img
+{
+    width: 100%;
+}
+.qr_code_container_close_btn
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -10px;
+    top: -10px;
+    height: 30px;
+    width: 30px;
+    z-index: 150;
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 10px;
+    background: var(--red-dark);
+    color: var(--red-dark);
+    border: 0;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+}
+.qr_code_container_close_btn ion-icon
+{
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    height: 50px;
+    width: 50px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    background: var(--shadow-dark);
+}
+.chat.incoming
+{
+    border: 3px solid red;
+}
