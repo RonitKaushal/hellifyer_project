@@ -7,28 +7,29 @@
 
 <?php include_once "header.php"; ?>
 <body>
+  <div class="main_center">
   <div class="wrapper">
     <section class="form signup">
       <header>Realtime Chat App</header>
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="name-details">
-          <div class="field input">
+          <!-- <div class="field input">
             <label>First Name</label>
-            <input type="text" name="fname" placeholder="First name" required>
+            <input type="text" name="fname" placeholder="First name is" required>
           </div>
           <div class="field input">
             <label>Last Name</label>
             <input type="text" name="lname" placeholder="Last name" required>
-          </div>
+          </div> -->
         </div>
         <div class="field input">
-          <label>Email Address</label>
-          <input type="text" name="email" placeholder="Enter your email" required>
+          <label>UserName>></label>
+          <input type="text" name="email" placeholder="@dairy_queen" required>
         </div>
         <div class="field input">
-          <label>Password</label>
-          <input type="password" name="password" placeholder="Enter new password" required>
+          <label>Password>></label>
+          <input type="password" name="password" placeholder="as24s!#ciq@" required>
           <i class="fas fa-eye"></i>
         </div>
         <div class="field image">
@@ -42,7 +43,7 @@
       <div class="link">Already signed up? <a href="login.php">Login now</a></div>
     </section>
   </div>
-
+</div>
   <script src="javascript/pass-show-hide.js"></script>
   <script src="javascript/signup.js"></script>
 
