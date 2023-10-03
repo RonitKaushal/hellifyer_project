@@ -24,11 +24,11 @@
           </div> -->
         </div>
         <div class="field input">
-          <label>UserName>></label>
+          <label>UserName </label>
           <input type="text" name="email" placeholder="@dairy_queen" required>
         </div>
         <div class="field input">
-          <label>Password>></label>
+          <label>Password </label>
           <input type="password" name="password" placeholder="as24s!#ciq@" required>
           <i class="fas fa-eye"></i>
         </div>
@@ -46,6 +46,5 @@
 </div>
   <script src="javascript/pass-show-hide.js"></script>
   <script src="javascript/signup.js"></script>
-
 </body>
 </html>

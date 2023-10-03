@@ -721,3 +721,18 @@ a
     border: 0;
     color: var(--dark-gray);
 }
+.wrapper .form .link
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+}
+.wrapper .form .link a
+{
+    color: var(--blue-dark);
+    font-family: 'Emilys Candy', cursive;
+    margin: 0 5px;
+    text-decoration: none;
+}
