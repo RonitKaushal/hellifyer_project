@@ -10,6 +10,8 @@
                 session_unset();
                 session_destroy();
                 header("location: ../login.php");
+                mysqli_query($conn, "DELETE FROM users WHERE unique_id = {$_GET['logout_id']}");
+                mysqli_query($conn, "DELETE FROM messages WHERE incoming_msg_id = {$_GET['logout_id']} OR outgoing_msg_id = {$_GET['logout_id']}");            
             }
         }else{
             header("location: ../users.php");

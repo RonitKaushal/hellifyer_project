@@ -11,28 +11,28 @@
         $query = mysqli_query($conn, $sql);
         if(mysqli_num_rows($query) > 0){
             while($row = mysqli_fetch_assoc($query)){
-                if($row['outgoing_msg_id'] === $outgoing_id){
+                // if($row['outgoing_msg_id'] === $outgoing_id){
                     $output .= '
                     
                     <div class="message send">
                     <div class="message_container">
                         
                         <div class="message_text">'. $row['msg'] .'</div>
-                        <div class="user_name">@'. $row['email'] .'</div>
+                        <div class="user_name">@'. $row['fname'] .'</div>
                     </div>
                 </div>
                                 ';
-                }else{
-                    $output .= '
+                // }else{
+                //     $output .= '
                     
-                    <div class="message recive">
-                    <div class="message_container">
-                        <div class="user_name">@'. $row['email'] .'</div>
-                        <div class="message_text">'. $row['msg'] .'</div>
-                    </div>
-                </div>
-                                ';
-                }
+                //     <div class="message recive">
+                //     <div class="message_container">
+                //         <div class="user_name">@'. $row['fname'] .'</div>
+                //         <div class="message_text">'. $row['msg'] .'</div>
+                //     </div>
+                // </div>
+                //                 ';
+                // }
             }
         //     <div class="chat incoming">
         //     './/<img src="php/images/'.$row['img'].'" alt="">'

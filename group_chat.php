@@ -9,6 +9,7 @@
   }
 ?>
 <?php include_once "header.php"; ?>
+
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +25,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head> -->
 <body>
-<?php
+  <?php
   ?>
     <div class="qr_code_section close">
         <div class="qr_code_container">
@@ -116,8 +117,8 @@
         <div class="chat_mode_area">
             <div class="chat_mode">
               <div class="phone_menu_close"><ion-icon name="menu"></ion-icon></div>
-              <a href="group_chat.php?user_id=454454545" class="chat_mode_btn public">Public</a>
-              <a href="chat.php?user_id=1659516849" class="chat_mode_btn private active">Private</a>
+              <a href="group_chat.php?user_id=454454545" class="chat_mode_btn public active">Public</a>
+              <a href="chat.php?user_id=1659516849" class="chat_mode_btn private">Private</a>
             </div>
           </div>
         </div>
@@ -134,7 +135,7 @@
     <!-- main_navbar_desktop end -->
     <!-- Main section start -->
     <div class="main_section">
-    <div class="firstPart close">
+        <div class="firstPart close">
         <div class="icons">
                 <div class="icon qr_code"><ion-icon name="qr-code"></ion-icon></div>
                 <!-- <div class="icon chat"><ion-icon name="chatbox"></ion-icon></div>-->
@@ -200,13 +201,61 @@
             <script data-cfasync="false" type="text/javascript" src="//dexpredict.com/a/display.php?r=7495078"></script>
             </div>
             <div class="image">
-                <img src="images/ad_banner_square.png">
+                <!-- 
+                  ////////////////////////////////////////////
+                 -->
+
+                 <script type="text/javascript">
+	atOptions = {
+		'key' : 'e0ec4aab50a44413820ce1f1b4d5b6d2',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//www.profitablecreativeformat.com/e0ec4aab50a44413820ce1f1b4d5b6d2/invoke.js"></scr' + 'ipt>');
+</script>
+
+
+                 <!-- //////////////////////////////////////// -->
             </div>
             <div class="image">
-                <img src="images/ad_banner_square.png">
+                <!-- 
+                  ////////////////////////////////////////////
+                 -->
+
+                 <script type="text/javascript">
+	atOptions = {
+		'key' : 'e0ec4aab50a44413820ce1f1b4d5b6d2',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//www.profitablecreativeformat.com/e0ec4aab50a44413820ce1f1b4d5b6d2/invoke.js"></scr' + 'ipt>');
+</script>
+
+
+                 <!-- //////////////////////////////////////// -->
             </div>
             <div class="image">
-                <img src="images/ad_banner_square.png">
+                <!-- 
+                  ////////////////////////////////////////////
+                 -->
+
+                 <script type="text/javascript">
+	atOptions = {
+		'key' : 'e0ec4aab50a44413820ce1f1b4d5b6d2',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="//www.profitablecreativeformat.com/e0ec4aab50a44413820ce1f1b4d5b6d2/invoke.js"></scr' + 'ipt>');
+</script>
+
+
+                 <!-- //////////////////////////////////////// -->
             </div>
         </div>
     </div>
@@ -247,8 +296,8 @@ $(".phone_menu_close").click(function(){
   $(".firstPart").removeClass("close");
 });
     </script>
- <script src="javascript/users.js"></script>
-      <script src="javascript/chat.js"></script>
+      <script src="javascript/users.js"></script>
+      <script src="javascript/group_chat.js"></script>
 
 </body>
 </html>

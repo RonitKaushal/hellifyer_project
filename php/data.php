@@ -18,10 +18,10 @@
         $output .= '<a href="chat.php?user_id='. $row['unique_id'] .'">
                     <div class="private_message">
                     <div class="image">
-                    <img src="php/images/'. $row['img'] .'">
+                    <img src="'. $row['img'] .'">
                     </div>
                     <div class="details">
-                        <span class="username">@'. $row['fname'].'</span>
+                        <span class="username">@'. $row['email'].'</span>
                         <div class="message_text"><p>'. $you . $msg .'</p></div>
                     </div>
                     </div>

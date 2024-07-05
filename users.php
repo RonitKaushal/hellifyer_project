@@ -4,6 +4,10 @@
   if(!isset($_SESSION['unique_id'])){
     header("location: login.php");
   }
+  else
+  {
+    header("location: group_chat.php?user_id=454454545");
+  }
 ?>
 <?php include_once "header.php"; ?>
 <body>
